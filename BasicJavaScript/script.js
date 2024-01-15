@@ -141,3 +141,92 @@ console.log("Finding a Remainder in JavaScript\n")
 const remainder = 11%3;
 
 console.log("Compound Assignment With Augmented Addition")
+let a = 3;
+let b = 17;
+let c = 12;
+
+// Only change code below this line
+a += 12;
+b += 9;
+c += 7;
+
+console.log("Compound Assignment With Augmented Subtraction")
+let a = 11;
+let b = 9;
+let c = 3;
+
+// Only change code below this line
+a -= 6;
+b -= 15;
+c -= 1;
+
+console.log("Compound Assignment With Augmented Multiplication\n")
+let a = 5;
+let b = 12;
+let c = 4.6;
+
+// Only change code below this line
+a *= 5;
+b *= 3;
+c *= 10;
+
+console.log("ompound Assignment With Augmented Division\n")
+let a = 48;
+let b = 108;
+let c = 33;
+
+// Only change code below this line
+a /= 12;
+b /= 4;
+c /= 11;
+
+console.log("Escaping Literal Quotes in Strings\n")
+const myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this line
+
+console.log("Quoting Strings with Single Quotes\n")
+const myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+
+console.log("Escape Sequences in Strings")
+const myStr = "FirstLine\n\t\\SecondLine\nThirdLine"; // Change this line
+
+console.log("Concatenating Strings with Plus Operator")
+const myStr = "This is the start."+" This is the end."; // Change this line
+
+console.log("Concatenating Strings with the Plus Equals Operator")
+let myStr = "This is the first sentence.";
+myStr += " This is the second sentence."
+
+console.log("Constructing Strings with Variables")
+// Only change code below this line
+const myName = "freeCodeCamp";
+const myStr = "Hello, our name is " + myName + ", how are you?";
+
+console.log("Appending Variables to Strings")
+// Change code below this line
+const someAdjective = "awesome";
+let myStr = "Learning to code is ";
+myStr += someAdjective
+
+console.log("Find the Length of a String")
+// Setup
+let lastNameLength = 0;
+const lastName = "Lovelace";
+
+// Only change code below this line
+lastNameLength = lastName.length;
+
+console.log("Use Bracket Notation to Find the First Character in a String")
+// Setup
+let firstLetterOfLastName = "";
+const lastName = "Lovelace";
+
+// Only change code below this line
+firstLetterOfLastName = lastName[0]; // Change this line
+
+console.log("Understand String Immutability")
+// Setup
+let myStr = "Jello World";
+
+// Only change code below this line
+myStr = "Hello World"; // Change this line
+// Only change code above this line
