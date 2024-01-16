@@ -138,7 +138,7 @@ console.log("Divide One Decimal by Another with JavaScript")
 const quotient = 4.4 / 2.0; // Change this line
 
 console.log("Finding a Remainder in JavaScript\n")
-const remainder = 11%3;
+const remainder = 11 % 3;
 
 console.log("Compound Assignment With Augmented Addition")
 let a = 3;
@@ -190,7 +190,7 @@ console.log("Escape Sequences in Strings")
 const myStr = "FirstLine\n\t\\SecondLine\nThirdLine"; // Change this line
 
 console.log("Concatenating Strings with Plus Operator")
-const myStr = "This is the start."+" This is the end."; // Change this line
+const myStr = "This is the start." + " This is the end."; // Change this line
 
 console.log("Concatenating Strings with the Plus Equals Operator")
 let myStr = "This is the first sentence.";
@@ -243,14 +243,14 @@ console.log("Use Bracket Notation to Find the Last Character in a String")
 const lastName = "Lovelace";
 
 // Only change code below this line
-const lastLetterOfLastName = lastName[lastName.length-1]; // Change this line
+const lastLetterOfLastName = lastName[lastName.length - 1]; // Change this line
 
 console.log("Use Bracket Notation to Find the Nth-to-Last Character in a String")
 // Setup
 const lastName = "Lovelace";
 
 // Only change code below this line
-const secondToLastLetterOfLastName = lastName[lastName.length-2]; // Change this line
+const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Change this line
 
 console.log("Word Blanks")
 const myNoun = "dog";
@@ -259,7 +259,7 @@ const myVerb = "ran";
 const myAdverb = "quickly";
 
 // Only change code below this line
-const wordBlanks =  "Once there was a " + myNoun + " which was very " + myAdjective + ". It " + myVerb + " " + myAdverb + " around the yard."; // Change this line
+const wordBlanks = "Once there was a " + myNoun + " which was very " + myAdjective + ". It " + myVerb + " " + myAdverb + " around the yard."; // Change this line
 // Only change code above this line
 
 console.log("Store Multiple Values in one Variable using JavaScript Arrays")
@@ -321,34 +321,39 @@ myArray.shift();
 myArray.unshift(["Paul", 35])
 
 console.log("Shopping List")
-const myList = [["Chocolate Bar", 15],["Chocolate Bar", 15],["Chocolate Bar", 15],["Chocolate Bar", 15],["Chocolate Bar", 15]];
+const myList = [["Chocolate Bar", 15], ["Chocolate Bar", 15], ["Chocolate Bar", 15], ["Chocolate Bar", 15], ["Chocolate Bar", 15]];
 
 console.log("Write Reusable JavaScript with Functions")
-function reusableFunction(){
+
+function reusableFunction() {
     console.log("Hi World")
 }
+
 reusableFunction()
 
 console.log("Passing Values to Functions with Arguments\n")
-function functionWithArgs(a,b){
-    console.log(a+b)
+
+function functionWithArgs(a, b) {
+    console.log(a + b)
 }
 
-functionWithArgs(1,2)
-functionWithArgs(7,9)
+functionWithArgs(1, 2)
+functionWithArgs(7, 9)
 
 console.log("Return a Value from a Function with Return")
-function timesFive(a){
-    return a*5
+
+function timesFive(a) {
+    return a * 5
 }
 
 console.log("Global Scope and Functions")
 // Declare the myGlobal variable below this line
 let myGlobal = 10;
 let oopsGlobal
+
 function fun1() {
     // Assign 5 to oopsGlobal here
-    oopsGlobal = myGlobal/2
+    oopsGlobal = myGlobal / 2
 }
 
 // Only change code above this line
@@ -365,11 +370,13 @@ function fun2() {
 }
 
 console.log("Local Scope and Functions")
+
 function myLocalScope() {
     // Only change code below this line
     let myVar = 10
     console.log('inside myLocalScope', myVar);
 }
+
 myLocalScope();
 
 // Run and check the console
@@ -398,8 +405,8 @@ function addThree() {
 }
 
 // Only change code below this line
-function addFive(){
-    sum+=5
+function addFive() {
+    sum += 5
 }
 
 // Only change code above this line
@@ -416,9 +423,10 @@ function processArg(num) {
 }
 
 // Only change code below this line
-processed =  processArg(7)
+processed = processArg(7)
 
 console.log("Stand in Line")
+
 function nextInLine(arr, item) {
     // Only change code below this line
     arr.push(item);
@@ -436,6 +444,7 @@ console.log(nextInLine(testArr, 6));
 console.log("After: " + JSON.stringify(testArr));
 
 console.log("Understanding Boolean Values")
+
 function welcomeToBooleans() {
     // Only change code below this line
 
@@ -445,11 +454,12 @@ function welcomeToBooleans() {
 }
 
 console.log("Use Conditional Logic with If Statements")
+
 function trueOrFalse(wasThatTrue) {
     // Only change code below this line
-    if(wasThatTrue){
+    if (wasThatTrue) {
         return "Yes, that was true"
-    }else{
+    } else {
         return "No, that was false"
     }
 
@@ -459,9 +469,10 @@ function trueOrFalse(wasThatTrue) {
 }
 
 console.log("Comparison with the Equality Operator")
+
 // Setup
 function testEqual(val) {
-    if (val==12) { // Change this line
+    if (val == 12) { // Change this line
         return "Equal";
     }
     return "Not Equal";
@@ -470,9 +481,10 @@ function testEqual(val) {
 testEqual(10);
 
 console.log("Comparison with the Strict Equality Operator")
+
 // Setup
 function testStrict(val) {
-    if (val===7) { // Change this line
+    if (val === 7) { // Change this line
         return "Equal";
     }
     return "Not Equal";
@@ -481,6 +493,7 @@ function testStrict(val) {
 testStrict(10);
 
 console.log("Practice comparing different values")
+
 // Setup
 function compareEquality(a, b) {
     if (a === b) { // Change this line
@@ -492,6 +505,7 @@ function compareEquality(a, b) {
 compareEquality(10, "10");
 
 console.log("Comparison with the Inequality Operator")
+
 // Setup
 function testNotEqual(val) {
     if (val != 99) { // Change this line
@@ -503,6 +517,7 @@ function testNotEqual(val) {
 testNotEqual(10);
 
 console.log("Comparison with the Strict Inequality Operator")
+
 // Setup
 function testStrictNotEqual(val) {
     if (val !== 17) { // Change this line
@@ -514,8 +529,9 @@ function testStrictNotEqual(val) {
 testStrictNotEqual(10);
 
 console.log("Comparison with the Greater Than Operator")
+
 function testGreaterThan(val) {
-    if (val >100) {  // Change this line
+    if (val > 100) {  // Change this line
         return "Over 100";
     }
 
@@ -529,8 +545,9 @@ function testGreaterThan(val) {
 testGreaterThan(10);
 
 console.log("Comparison with the Greater Than Or Equal To Operator")
+
 function testGreaterOrEqual(val) {
-    if (val>= 20) {  // Change this line
+    if (val >= 20) {  // Change this line
         return "20 or Over";
     }
 
@@ -544,12 +561,13 @@ function testGreaterOrEqual(val) {
 testGreaterOrEqual(10);
 
 console.log("Comparison with the Less Than Operator")
+
 function testLessThan(val) {
-    if (val <25) {  // Change this line
+    if (val < 25) {  // Change this line
         return "Under 25";
     }
 
-    if (val <55) {  // Change this line
+    if (val < 55) {  // Change this line
         return "Under 55";
     }
 
@@ -559,12 +577,13 @@ function testLessThan(val) {
 testLessThan(10);
 
 console.log("Comparison with the Less Than Or Equal To O")
+
 function testLessOrEqual(val) {
-    if (val<=12) {  // Change this line
+    if (val <= 12) {  // Change this line
         return "Smaller Than or Equal to 12";
     }
 
-    if (val<=24) {  // Change this line
+    if (val <= 24) {  // Change this line
         return "Smaller Than or Equal to 24";
     }
 
@@ -574,10 +593,11 @@ function testLessOrEqual(val) {
 testLessOrEqual(10);
 
 console.log("Comparisons with the Logical And Operator\n")
+
 function testLogicalAnd(val) {
     // Only change code below this line
 
-    if (val <= 50&&val>=25) {
+    if (val <= 50 && val >= 25) {
         return "Yes";
     }
 
@@ -588,10 +608,11 @@ function testLogicalAnd(val) {
 testLogicalAnd(10);
 
 console.log("Comparisons with the Logical Or Operator")
+
 function testLogicalOr(val) {
     // Only change code below this line
 
-    if (val<10||val>20) {
+    if (val < 10 || val > 20) {
         return "Outside";
     }
 
@@ -602,13 +623,14 @@ function testLogicalOr(val) {
 testLogicalOr(15);
 
 console.log("Introducing Else Statements")
+
 function testElse(val) {
     let result = "";
     // Only change code below this line
 
     if (val > 5) {
         result = "Bigger than 5";
-    }else{
+    } else {
         result = "5 or Smaller";
     }
 
@@ -619,21 +641,22 @@ function testElse(val) {
 testElse(4);
 
 console.log("Introducing Else If Statements")
+
 function testElseIf(val) {
     if (val > 10) {
         return "Greater than 10";
-    }
-
-    else if (val < 5) {
+    } else if (val < 5) {
         return "Smaller than 5";
-    }else{
+    } else {
 
-        return "Between 5 and 10";}
+        return "Between 5 and 10";
+    }
 }
 
 testElseIf(7);
 
 console.log("Logical Order in If Else Statements")
+
 function orderMyLogic(val) {
     if (val < 5) {
         return "Less than 5";
@@ -647,17 +670,18 @@ function orderMyLogic(val) {
 orderMyLogic(7);
 
 console.log("Chaining If Else Statements")
+
 function testSize(num) {
     // Only change code below this line
-    if(num <5) {
+    if (num < 5) {
         return "Tiny"
-    }else if(num<10){
+    } else if (num < 10) {
         return "Small"
-    }else if(num<15){
+    } else if (num < 15) {
         return "Medium"
-    }else if(num<20){
+    } else if (num < 20) {
         return "Large"
-    }else{
+    } else {
         return "Huge"
     }
 
@@ -672,19 +696,19 @@ const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey"
 
 function golfScore(par, strokes) {
     // Only change code below this line
-    if(strokes===1){
+    if (strokes === 1) {
         return "Hole-in-one!"
-    }else if(strokes <=par-2){
+    } else if (strokes <= par - 2) {
         return "Eagle"
-    }else if(strokes ===par-1){
+    } else if (strokes === par - 1) {
         return "Birdie"
-    }else if(strokes ===par){
+    } else if (strokes === par) {
         return "Par"
-    }else if(strokes ===par+1){
+    } else if (strokes === par + 1) {
         return "Bogey"
-    }else if(strokes ===par+2){
+    } else if (strokes === par + 2) {
         return "Double Bogey"
-    }else{
+    } else {
         return "Go Home!"
     }
 
@@ -695,11 +719,12 @@ function golfScore(par, strokes) {
 golfScore(5, 4);
 
 console.log("Selecting from Many Options with Switch Statements")
+
 function caseInSwitch(val) {
     let answer = "";
     // Only change code below this line
 
-    switch(val){
+    switch (val) {
         case 1:
             answer = "alpha"
             break
@@ -723,10 +748,11 @@ function caseInSwitch(val) {
 caseInSwitch(1);
 
 console.log("Adding a Default Option in Switch Statements")
+
 function switchOfStuff(val) {
     let answer = "";
     // Only change code below this line
-    switch(val){
+    switch (val) {
         case "a":
             answer = "apple"
             break
@@ -751,10 +777,11 @@ function switchOfStuff(val) {
 switchOfStuff(1);
 
 console.log("Multiple Identical Options in Switch Statements")
+
 function sequentialSizes(val) {
     let answer = "";
     // Only change code below this line
-    switch(val){
+    switch (val) {
         case 1:
         case 2:
         case 3:
@@ -780,10 +807,11 @@ function sequentialSizes(val) {
 sequentialSizes(1);
 
 console.log("Replacing If Else Chains with Switch")
+
 function chainToSwitch(val) {
     let answer = "";
     // Only change code below this line
-    switch(val){
+    switch (val) {
         case "bob":
             answer = "Marley"
             break
@@ -808,20 +836,22 @@ function chainToSwitch(val) {
 chainToSwitch(7);
 
 console.log("Returning Boolean Values from Functions")
+
 function isLess(a, b) {
     // Only change code below this line
-    return a<b
+    return a < b
     // Only change code above this line
 }
 
 isLess(10, 15);
 
 console.log("Return Early Pattern for Functions")
+
 // Setup
 function abTest(a, b) {
     // Only change code below this line
 
-    if(a<0||b<0){
+    if (a < 0 || b < 0) {
         return undefined
     }
 
@@ -830,46 +860,53 @@ function abTest(a, b) {
     return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
 }
 
-abTest(2,2);
+abTest(2, 2);
 
 console.log("Counting Cards")
 let count = 0;
 
 function cc(card) {
     // Only change code below this line
-    if(card)
-    {switch(card){
-        case 2:
-        case 3:
-        case 4:
-        case 5:
-        case 6:
-            count +=1
-            break
-        case 7:
-        case 8:
-        case 9:
-            count +=0
-            break
-        default:
-            count-=1
-    }
-        if(count >0){return count+" Bet"}
-        else{return count+ " Hold"}
+    if (card) {
+        switch (card) {
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+                count += 1
+                break
+            case 7:
+            case 8:
+            case 9:
+                count += 0
+                break
+            default:
+                count -= 1
+        }
+        if (count > 0) {
+            return count + " Bet"
+        } else {
+            return count + " Hold"
+        }
     }
     return "Change Me";
     // Only change code above this line
 }
 
-cc(2); cc(3); cc(7); cc('K'); cc('A');
+cc(2);
+cc(3);
+cc(7);
+cc('K');
+cc('A');
 
 console.log("Build JavaScript Objects")
 const myDog = {
     // Only change code below this line
-    name : "Wok",
-    legs : 4,
-    tails : 1,
-    friends :["Bong"]
+    name: "Wok",
+    legs: 4,
+    tails: 1,
+    friends: ["Bong"]
 
     // Only change code above this line
 };
@@ -909,3 +946,409 @@ const testObj = {
 // Only change code below this line
 const playerNumber = 16;  // Change this line
 const player = testObj[playerNumber];   // Change this line
+
+console.log("Updating Object Properties")
+// Setup
+const myDog = {
+    "name": "Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+};
+
+// Only change code below this line
+myDog["name"] = "Happy Coder"
+
+console.log("Add New Properties to a JavaScript Object")
+const myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.bark = "bow-wow";
+
+console.log("Delete Properties from a JavaScript Object")
+// Setup
+const myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"],
+    "bark": "woof"
+};
+
+// Only change code below this line
+delete myDog.tails
+
+console.log("Using Objects for Lookups")
+
+// Setup
+function phoneticLookup(val) {
+    let result = "";
+
+    // Only change code below this line
+    // switch(val) {
+    //   case "alpha":
+    //     result = "Adams";
+    //     break;
+    //   case "bravo":
+    //     result = "Boston";
+    //     break;
+    //   case "charlie":
+    //     result = "Chicago";
+    //     break;
+    //   case "delta":
+    //     result = "Denver";
+    //     break;
+    //   case "echo":
+    //     result = "Easy";
+    //     break;
+    //   case "foxtrot":
+    //     result = "Frank";
+    // }
+    const myData = {
+        alpha: "Adams", bravo: "Boston", charlie: "Chicago", delta: "Denver", echo: "Easy", foxtrot: "Frank"
+    }
+    const value = val
+    return myData[value]
+
+    // Only change code above this line
+    return result;
+}
+
+phoneticLookup("charlie");
+
+console.log("Testing Objects for Properties")
+function checkObj(obj, checkProp) {
+    // Only change code below this line
+    if(obj.hasOwnProperty(checkProp)){
+        return obj[checkProp]
+    };
+    return "Not Found"
+    // Only change code above this line
+}
+
+console.log("Manipulating Complex Objects")
+const myMusic = [
+    {
+        "artist": "Billy Joel",
+        "title": "Piano Man",
+        "release_year": 1973,
+        "formats": [
+            "CD",
+            "8T",
+            "LP"
+        ],
+        "gold": true
+    },
+    {
+        "artist": "Billy Joel",
+        "title": "Piano Man",
+        "release_year": 1973,
+        "formats": [
+            "CD",
+            "8T",
+            "LP"
+        ],
+        "gold": true
+    }
+];
+
+console.log("Accessing Nested Objects")
+const myStorage = {
+    "car": {
+        "inside": {
+            "glove box": "maps",
+            "passenger seat": "crumbs"
+        },
+        "outside": {
+            "trunk": "jack"
+        }
+    }
+};
+
+const gloveBoxContents = myStorage.car.inside["glove box"];
+
+console.log("Accessing Nested Arrays")
+const myPlants = [
+    {
+        type: "flowers",
+        list: [
+            "rose",
+            "tulip",
+            "dandelion"
+        ]
+    },
+    {
+        type: "trees",
+        list: [
+            "fir",
+            "pine",
+            "birch"
+        ]
+    }
+];
+
+const secondTree = myPlants[1].list[1];
+
+console.log("Record Collection")
+// Setup
+const recordCollection = {
+    2548: {
+        albumTitle: 'Slippery When Wet',
+        artist: 'Bon Jovi',
+        tracks: ['Let It Rock', 'You Give Love a Bad Name']
+    },
+    2468: {
+        albumTitle: '1999',
+        artist: 'Prince',
+        tracks: ['1999', 'Little Red Corvette']
+    },
+    1245: {
+        artist: 'Robert Palmer',
+        tracks: []
+    },
+    5439: {
+        albumTitle: 'ABBA Gold'
+    }
+};
+
+// Only change code below this line
+function updateRecords(records, id, prop, value) {
+    switch (prop) {
+        case "tracks":
+            if (value) {
+                if (!records[id].tracks) {
+                    records[id].tracks = []
+                }
+                records[id].tracks.push(value)
+            } else {
+                delete records[id].tracks
+            }
+            break
+
+        case "artist":
+            if (value) {
+                records[id].artist = value
+            } else {
+                delete records[id].artist
+            }
+            break
+
+        case "albumTitle":
+            if (value) {
+                records[id].albumTitle = value
+            } else {
+                delete records[id].albumTitle
+            }
+            break
+
+    }
+
+    return records;
+}
+
+updateRecords(recordCollection, 5439, 'artist', 'ABBA');
+
+console.log("Iterate with JavaScript While Loops")
+// Setup
+const myArray = [];
+
+// Only change code below this line
+let i = 5
+while(i>=0){
+    myArray.push(i)
+    i--
+}
+
+console.log("Iterate with JavaScript For Loops\n")
+// Setup
+const myArray = [];
+
+// Only change code below this line
+for(let i = 1; i<=5; i++){
+    myArray.push(i)
+}
+
+console.log("Iterate Odd Numbers With a For Loop")
+// Setup
+const myArray = [];
+
+// Only change code below this line
+for(let i = 1;i<10;i+=2){
+    myArray.push(i)
+}
+
+console.log("Count Backwards With a For Loop")
+// Setup
+const myArray = [];
+
+// Only change code below this line
+for(let i = 9; i > 0; i-=2){
+    myArray.push(i)
+}
+
+console.log("Iterate Through an Array with a For Loop\n")
+// Setup
+const myArr = [2, 3, 4, 5, 6];
+
+// Only change code below this line
+let total = 0
+for(let i = 0; i<myArr.length; i++){
+    total+=myArr[i]
+}
+console.log(total)
+
+console.log("Nesting For Loops")
+function multiplyAll(arr) {
+    let product = 1;
+    // Only change code below this line
+    for(let i = 0; i<arr.length;i++){
+        for(let j = 0;j<arr[i].length; j++){
+            product *= arr[i][j]
+        }
+    }
+    // Only change code above this line
+    return product;
+}
+
+multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+
+console.log("Iterate with JavaScript Do...While Loops")
+// Setup
+const myArray = [];
+let i = 10;
+
+// Only change code below this line
+
+do{
+    myArray.push(i);
+    i++;
+}while (i < 5)
+
+console.log("Replace Loops using Recursion")
+function sum(arr, n) {
+    // Only change code below this line
+    if(n<=0){
+        return 0
+    }else{
+        return sum(arr, n - 1) + arr[n - 1]
+    }
+    // Only change code above this line
+}
+
+console.log("Profile Lookup")
+// Setup
+const contacts = [
+    {
+        firstName: "Akira",
+        lastName: "Laine",
+        number: "0543236543",
+        likes: ["Pizza", "Coding", "Brownie Points"],
+    },
+    {
+        firstName: "Harry",
+        lastName: "Potter",
+        number: "0994372684",
+        likes: ["Hogwarts", "Magic", "Hagrid"],
+    },
+    {
+        firstName: "Sherlock",
+        lastName: "Holmes",
+        number: "0487345643",
+        likes: ["Intriguing Cases", "Violin"],
+    },
+    {
+        firstName: "Kristian",
+        lastName: "Vos",
+        number: "unknown",
+        likes: ["JavaScript", "Gaming", "Foxes"],
+    },
+];
+
+function lookUpProfile(name, prop) {
+    // Only change code below this line
+    for (let i = 0; i < contacts.length; i++)
+    {
+        if (contacts[i].firstName === name && contacts[i].hasOwnProperty(prop))
+        {
+            return contacts[i][prop];
+        }
+        else if (contacts[i].firstName === name && !contacts[i].hasOwnProperty(prop))
+        {
+            return "No such property";
+        }
+    }
+    return "No such contact";
+    // Only change code above this line
+}
+
+lookUpProfile("Akira", "likes");
+
+console.log("Generate Random Fractions with JavaScript")
+function randomFraction() {
+
+    // Only change code below this line
+
+    return Math.random() * 10;
+
+    // Only change code above this line
+}
+
+console.log("Generate Random Whole Numbers with JavaScript")
+function randomWholeNum() {
+    return Math.floor(Math.random()*10);
+}
+
+console.log("Generate Random Whole Numbers within a Range")
+function randomRange(myMin, myMax) {
+    return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+}
+
+console.log("Use the parseInt Function\n")
+function convertToInteger(str) {
+    return parseInt(str)
+}
+
+convertToInteger("56");
+
+console.log("Use the parseInt Function with a Radix")
+function convertToInteger(str) {
+    return parseInt(str, 2);
+}
+
+convertToInteger("10011");
+
+console.log("Use the Conditional (Ternary) Operator\n")
+function checkEqual(a, b) {
+    return a === b ? "Equal":"Not Equal"
+}
+
+checkEqual(1, 2);
+
+console.log("Use Multiple Conditional (Ternary) Operators\n")
+function checkSign(num) {
+    return num >0 ? "positive":num<0?"negative":"zero"
+}
+
+checkSign(10);
+
+console.log("Use Recursion to Create a Countdown")
+// Only change code below this line
+function countdown(n){
+    return n < 1 ? [] : [n].concat(countdown(n - 1));
+}
+// Only change code above this line
+
+console.log("Use Recursion to Create a Range of Numbers")
+function rangeOfNumbers(startNum, endNum) {
+    if (endNum - startNum === 0) {
+        return [startNum];
+    } else {
+        var numbers = rangeOfNumbers(startNum, endNum - 1);
+        numbers.push(endNum);
+        return numbers;
+    }
+};
